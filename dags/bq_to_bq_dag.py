@@ -35,5 +35,5 @@ with DAG(
                 "useLegacySql": False,
             }
         },
-        location='US',  # or your region
+        location='US'
     )
