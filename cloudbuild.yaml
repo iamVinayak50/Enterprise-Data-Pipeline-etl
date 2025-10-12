@@ -1,5 +1,14 @@
 steps:
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'cp', 'dags/bq_to_bq_dag.py', 'gs://us-central1-airflow-demo-838b4df0-bucket/dags/']
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo "Deploying Airflow DAGs to GCS bucket..."
+        gsutil -m rsync -r dags gs://us-central1-airflow-demo-838b4df0-bucket/dags
 
-timeout: 600s
+# Add this options section
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+timeout: '900s'
