@@ -7,7 +7,6 @@ steps:
         echo "Deploying Airflow DAGs to GCS bucket..."
         gsutil -m rsync -r dags gs://us-central1-airflow-demo-838b4df0-bucket/dags
 
-# Add this options section
 options:
   logging: CLOUD_LOGGING_ONLY
 
