@@ -1,6 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/git'
-    args: ['clone', 'https://github.com/your_repo/simple-etl.git']
+    args: ['clone', 'https://github.com/repo/simple-etl.git']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/airflow-etl', '.']
   - name: 'gcr.io/cloud-builders/gcloud'
