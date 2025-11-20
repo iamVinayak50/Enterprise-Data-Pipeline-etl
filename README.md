@@ -1,8 +1,8 @@
-# 🚗 JLR Campaign Lifecycle Management ETL Project
+# 🚗 Campaign Lifecycle Management ETL Project
 
 ## 📌 Project Overview
 - **Project Name:** Campaign Lifecycle Management ETL  
-- **Client:** JLR  
+- **Client:**  
 - **Objective:** Extract, transform, and load multi-source data into **BigQuery gold tables** and **MySQL** for analytics.  
 - **Tech Stack:**  
   - ☁️ **Cloud:** GCP (BigQuery, Dataproc, Composer, Secret Manager, Cloud Logging & Monitoring)  
