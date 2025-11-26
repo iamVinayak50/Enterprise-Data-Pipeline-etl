@@ -12,11 +12,9 @@
 
 ---
 
-## 🗂 Phase 1 – Data Generation & Ingestion
+## 🗂 Phase 1 – Ingestion
 - Raw sources: SAP, Vista, IQM, CSV files  
-- Tools: Python scripts (`pandas`, `Faker`) for synthetic data  
-- Storage: GCS / BigQuery staging  
-- ✅ Ensures realistic testing and consistency  
+-  
 
 ---
 
